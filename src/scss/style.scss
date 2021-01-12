@@ -1,0 +1,77 @@
+html {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  body {
+    background-color: #001555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba($color: rgb(199, 199, 199), $alpha: 0.4);
+      width: 40%;
+      padding: 3rem;
+      margin-bottom: 5rem;
+      .input__container {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 100%;
+        label {
+          color: lightgray;
+          margin-top: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+        input,
+        select {
+          padding: 1em;
+          border: none;
+          border-radius: 0.3em;
+        }
+        select {
+          margin-bottom: 3rem;
+        }
+      }
+      .exercises__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 3rem;
+        p {
+          color: lightgray;
+        }
+        .favorite__checkbox {
+          margin-top: 0.3em;
+        }
+      }
+      .feedback__container {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 100%;
+        label {
+          color: lightgray;
+          margin-bottom: 0.5em;
+        }
+        textarea {
+          height: 8rem;
+          padding: 1rem;
+          border: none;
+          border-radius: 0.3em;
+          margin-bottom: 3rem;
+        }
+      }
+      button {
+        border: none;
+        padding: 0.8em 3em;
+        border-radius: 0.3em;
+        cursor: pointer;
+      }
+    }
+  }
+}

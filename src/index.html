@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form
+      action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php"
+      method="get"
+    >
+      <div class="input__container">
+        <label for="name__input">NAME</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          id="name__input"
+        />
+      </div>
+      <div class="input__container">
+        <label for="email__input">EMAIL</label>
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your email"
+          id="email__input"
+        />
+      </div>
+      <div class="input__container">
+        <label for="select__batch">CHOOSE BATCH</label>
+        <select name="batch" id="select__batch">
+          <option value="winter2021">Winter 2021</option>
+          <option value="spring2021">Spring 2021</option>
+          <option value="summer2021">Summer 2021</option>
+        </select>
+      </div>
+      <div class="exercises__container">
+        <p>DID YOU COMPLETE ALL THE EXCERCISES FROM WEEK 1?</p>
+        <div class="excercises__checkbox">
+          <input
+            type="radio"
+            name="excercises-completed"
+            class="excercises__checkbox excercises__checkbox--no"
+            id="no"
+            value="falsefavorite-excercise"
+          />
+          <label for="no">No</label>
+        </div>
+        <div class="excercises__checkbox">
+          <input
+            type="radio"
+            name="excercises-completed"
+            id="yes"
+            class="excercises__checkbox excercises__checkbox--yes"
+            value="true"
+          />
+          <label for="yes">Yes</label>
+        </div>
+      </div>
+      <div class="exercises__container">
+        <p>CHOOSE YOUR FAVORITE EXERCISES</p>
+        <div class="favorite__checkbox">
+          <input
+            type="checkbox"
+            name="favorite-excercise-CSS"
+            id="css"
+            class="favorite__checkbox favorite__checkbox--css"
+            value="true"
+          />
+          <label for="css">CSS selectors</label>
+        </div>
+        <div class="favorite__checkbox">
+          <input
+            type="checkbox"
+            name="favorite-excercise-book page"
+            id="book"
+            class="favorite__checkbox favorite__checkbox--book"
+            value="true"
+          />
+          <label for="book">Book page</label>
+        </div>
+        <div class="favorite__checkbox">
+          <input
+            type="checkbox"
+            name="favorite-excercise-belfast"
+            id="belfast"
+            class="favorite__checkbox favorite__checkbox--belfast"
+            value="true"
+          />
+          <label for="belfast">Belfast International Kindergarten</label>
+        </div>
+        <div class="favorite__checkbox">
+          <input
+            type="checkbox"
+            name="favorite-excercise-crownsnest"
+            id="crownsnest"
+            class="favorite__checkbox favorite__checkbox--crownsnest"
+            value="true"
+          />
+          <label for="crownsnest">Crownsnest Retreat</label>
+        </div>
+        <div class="favorite__checkbox">
+          <input
+            type="checkbox"
+            name="favorite-excercise-google"
+            id="google"
+            class="favorite__checkbox favorite__checkbox--google"
+            value="true"
+          />
+          <label for="google">Google page</label>
+        </div>
+        <div class="favorite__checkbox">
+          <input
+            type="checkbox"
+            name="favorite-excercise-documentation"
+            id="documentation"
+            class="favorite__checkbox favorite__checkbox--documentation"
+            value="true"
+          />
+          <label for="documentation">Documentation page</label>
+        </div>
+        <div class="favorite__checkbox">
+          <input
+            type="checkbox"
+            name="favorite-excercise-aneta"
+            id="aneta"
+            class="favorite__checkbox favorite__checkbox--aneta"
+            value="true"
+          />
+          <label for="aneta">Aneta Webbie Personal Portfolio</label>
+        </div>
+      </div>
+      <div class="feedback__container">
+        <label for="feedback"> WRITE FEEDBACK </label>
+        <textarea name="feedback" id="feedback"></textarea>
+      </div>
+      <button>SUBMIT</button>
+    </form>
+  </body>
+</html>
